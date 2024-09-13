@@ -10,8 +10,21 @@ public class SortAnArray {
     Arrays.sort(myArr);
 
     System.out.println("Array Sorted Ascending: ");
+    
     for(int i = 0; i < arrSize; ++i){
         System.out.println(myArr[i]);   
+    }
+
+    for(int i = 0; i < arrSize / 2; ++i) {
+        int tempValue = myArr[i];
+        myArr[i] = myArr[myArr.length - 1 - i];
+        myArr[myArr.length - 1 - i] = tempValue;
+     }
+     
+    System.out.println("Array Sorted Descending: ");
+    
+    for(int i = 0; i < arrSize; ++i) {
+        System.out.print(myArr[i] + ",");
     }
 
 
