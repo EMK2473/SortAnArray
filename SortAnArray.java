@@ -9,24 +9,15 @@ public class SortAnArray {
    public static void sortArray(int[] myArr, int arrSize){
     Arrays.sort(myArr);
 
-    System.out.println("Array Sorted Ascending: ");
-    
-    for(int i = 0; i < arrSize; ++i){
-        System.out.println(myArr[i]);   
-    }
-
     for(int i = 0; i < arrSize / 2; ++i) {
         int tempValue = myArr[i];
         myArr[i] = myArr[myArr.length - 1 - i];
         myArr[myArr.length - 1 - i] = tempValue;
      }
      
-    System.out.println("Array Sorted Descending: ");
-    
     for(int i = 0; i < arrSize; ++i) {
         System.out.print(myArr[i] + ",");
     }
-
 
    }
 
@@ -34,7 +25,6 @@ public class SortAnArray {
       /* Type your code here. */
       Scanner scnr = new Scanner(System.in);
       final int NUM_VALUES = scnr.nextInt();
-      System.out.println("NUM_VALUES: " + NUM_VALUES);
       int[] myArray = new int[NUM_VALUES];
       
       for(int i = 0; i < NUM_VALUES; ++i) {
