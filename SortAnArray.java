@@ -32,6 +32,7 @@ public class SortAnArray {
       }
       
       sortArray(myArray, NUM_VALUES);
+      System.out.println();
       scnr.close();
    }
 }
