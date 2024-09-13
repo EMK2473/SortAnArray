@@ -29,7 +29,6 @@ public class SortAnArray {
       
       for(int i = 0; i < NUM_VALUES; ++i) {
          myArray[i] = scnr.nextInt();
-         System.out.println(myArray[i] + ", ");
       }
       
       sortArray(myArray, NUM_VALUES);
