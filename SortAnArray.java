@@ -8,6 +8,13 @@ public class SortAnArray {
    /* Define your method here */
    public static void sortArray(int[] myArr, int arrSize){
     Arrays.sort(myArr);
+
+    System.out.println("Array Sorted Ascending: ");
+    for(int i = 0; i < arrSize; ++i){
+        System.out.println(myArr[i]);   
+    }
+
+
    }
 
    public static void main(String[] args) {
